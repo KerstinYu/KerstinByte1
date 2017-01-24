@@ -1,4 +1,5 @@
 # Imports
+from flask import Flask
 import os
 import jinja2
 import webapp2
@@ -9,7 +10,6 @@ JINJA_ENVIRONMENT = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
     
-from flask import Flask
 app = Flask(__name__)
 app.config['DEBUG'] = True
 
